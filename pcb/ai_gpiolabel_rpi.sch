@@ -7422,6 +7422,12 @@ This library includes schematic frames, logos, and other non-electrical/-mechani
 <vertex x="1.9710375" y="-0.005078125"/>
 </polygon>
 </package>
+<package name="CREATIVE-COMMONS">
+<text x="0" y="-3.81" size="1.905" layer="51" font="vector" ratio="10" align="center">Released under the Creative Commons 
+Attribution Share-Alike 4.0 License</text>
+<text x="0" y="-8.89" size="1.27" layer="51" font="vector" ratio="10" align="center"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="0" y="-12.7" size="1.524" layer="51" font="vector" ratio="10" align="center">Designed by:</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER-L">
@@ -9508,7 +9514,7 @@ A4 (8.5x11) US Letter frame based on the built-in A4-LOC frame.
 <gate name="G$2" symbol="LETTER-DOCFIELD" x="154.94" y="3.81" addlevel="must"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="CREATIVE-COMMONS">
 <technologies>
 <technology name="">
 <attribute name="REV" value="" constant="no"/>
@@ -10037,7 +10043,9 @@ This library includes USB, pin headers and sockets in different configurations (
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="154.94" y="3.81"/>
+<instance part="FRAME1" gate="G$2" x="154.94" y="3.81">
+<attribute name="REV" x="154.94" y="3.81" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$2" gate="G$1" x="144.78" y="17.78"/>
 <instance part="LABEL" gate="G$1" x="123.19" y="95.25"/>
 <instance part="U$4" gate="G$1" x="144.78" y="17.78"/>
@@ -10050,4 +10058,10 @@ This library includes USB, pin headers and sockets in different configurations (
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
