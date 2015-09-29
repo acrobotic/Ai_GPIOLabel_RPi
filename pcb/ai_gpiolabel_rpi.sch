@@ -7438,18 +7438,18 @@ This library includes schematic frames, logos, and other non-electrical/-mechani
 <wire x1="78.74" y1="15.24" x2="78.74" y2="7.62" width="0.1016" layer="94"/>
 <wire x1="78.74" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
 <wire x1="78.74" y1="7.62" x2="101.6" y2="7.62" width="0.1016" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<text x="2.54" y="2.54" size="2.54" layer="94">DATE:</text>
-<text x="15.24" y="2.54" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="68.58" y="2.54" size="2.54" layer="94">SHEET:</text>
-<text x="83.82" y="2.54" size="2.54" layer="94">&gt;SHEET</text>
-<text x="81.28" y="10.16" size="2.54" layer="94">REV:</text>
-<text x="2.54" y="17.78" size="2.54" layer="94">TITLE:</text>
-<text x="15.24" y="17.78" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="2.54" y="10.16" size="2.54" layer="94">AUTHOR:</text>
-<text x="20.32" y="10.16" size="2.54" layer="94">&gt;AUTHOR</text>
-<text x="91.44" y="10.16" size="2.54" layer="94">&gt;REV</text>
+<wire x1="0" y1="15.24" x2="0" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="0" y1="24.13" x2="101.6" y2="24.13" width="0.1016" layer="94"/>
+<text x="2.54" y="2.54" size="2.54" layer="94" font="vector" ratio="10">DATE:</text>
+<text x="15.24" y="2.54" size="2.54" layer="94" font="vector" ratio="10">&gt;LAST_DATE_TIME</text>
+<text x="68.58" y="2.54" size="2.54" layer="94" font="vector" ratio="10">SHEET:</text>
+<text x="83.82" y="2.54" size="2.54" layer="94" font="vector" ratio="10">&gt;SHEET</text>
+<text x="81.28" y="10.16" size="2.54" layer="94" font="vector" ratio="10">REV:</text>
+<text x="2.54" y="10.16" size="2.54" layer="94" font="vector" ratio="10">TITLE:</text>
+<text x="15.24" y="10.16" size="2.54" layer="94" font="vector" ratio="10">&gt;DRAWING_NAME</text>
+<text x="91.44" y="10.16" size="2.54" layer="94" font="vector" ratio="10">&gt;REV</text>
+<text x="2.54" y="20.32" size="2.54" layer="94" font="vector" ratio="10">Designed by ACROBOTIC in Pasadena, CA</text>
+<text x="2.54" y="16.51" size="1.651" layer="94" font="vector" ratio="10">Released under Creative Commons Attribution Share-Alike 4.0 License</text>
 </symbol>
 <symbol name="AI-LOGO">
 <rectangle x1="-0.00761875" y1="-0.00761875" x2="9.51738125" y2="0.00761875" layer="94"/>
@@ -9511,7 +9511,6 @@ A4 (8.5x11) US Letter frame based on the built-in A4-LOC frame.
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="AUTHOR" value="" constant="no"/>
 <attribute name="REV" value="" constant="no"/>
 </technology>
 </technologies>
@@ -10026,7 +10025,6 @@ This library includes USB, pin headers and sockets in different configurations (
 </classes>
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
-<attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
 <attribute name="REV" value="1.0"/>
 </part>
 <part name="U$2" library="Ai_Miscellany" deviceset="AI-LOGO" device="XS"/>
@@ -10042,7 +10040,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <instance part="FRAME1" gate="G$2" x="154.94" y="3.81"/>
 <instance part="U$2" gate="G$1" x="144.78" y="17.78"/>
 <instance part="LABEL" gate="G$1" x="123.19" y="95.25"/>
-<instance part="U$4" gate="G$1" x="144.78" y="16.51"/>
+<instance part="U$4" gate="G$1" x="144.78" y="17.78"/>
 </instances>
 <busses>
 </busses>
